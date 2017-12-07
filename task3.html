@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+    <style>
+        /*清除浮动*/
+        .clearfix:before,
+        .clearfix:after{
+            display: table;
+            content: '';
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        .clearfix{
+            /*overflow: auto;*/
+            *zoom: 1;
+        }
+
+        .main{
+            border: 2px solid #999;
+        }
+        .main .left,
+        .main .center,
+        .main .right{
+            border: 2px solid #999;
+            margin: 20px;
+        }
+
+        .main .left{
+            width: 200px;
+            line-height: 60px;
+            float: left;
+        }
+        .main .center{
+            margin-right: 160px;
+            margin-left: 240px;
+            padding: 20px;
+        }
+        .main .right{
+            width: 120px;
+            float: right;
+        }
+
+        .main .left .box{
+            float: left;
+        }
+        .main .box{
+            width: 80px;
+            height: 80px;
+            background-color: darkseagreen;
+            margin: 20px;
+            border: 2px solid #999;
+            line-height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main clearfix">
+    <div class="left">
+        <div class="box">团队logo</div>
+        团队名称
+    </div>
+
+    <div class="right">
+        <div class="box">个人logo</div>
+        <div class="box">个人logo</div>
+        <div class="box">个人logo</div>
+        <div class="box">个人logo</div>
+    </div>
+
+    <div class="center">
+        <p>很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长</p>
+        <p>的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍
+            很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍很长的介绍
+            很长的介绍很长的介绍很长的介绍
+        </p>
+    </div>
+</div>
+</body>
+</html>

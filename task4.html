@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4</title>
+
+    <style>
+        body{
+            /*position: relative;*/
+
+            /*居中方法4*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+        }
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            overflow: hidden;
+
+            /*居中方法1*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*margin: -100px 0 0 -200px;*/
+
+            /*居中方法2*/
+            /*top: 0;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*margin: auto;*/
+
+            /*居中方法3*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*transform: translate(-50%,-50%);*/
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #fc0;
+        }
+        #e1{
+            position: absolute;
+            left: -50px;
+            top: -50px;
+        }
+        #e2{
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="circle" id="e1"></div>
+    <div class="circle" id="e2"></div>
+</div>
+
+<!--用JS动态设置定位-->
+<!--<script>-->
+    <!--window.onload = function(){-->
+        <!--position();-->
+    <!--}-->
+    <!--window.onresize = function () {-->
+        <!--position();-->
+    <!--}-->
+
+    <!--function g(id) {-->
+        <!--if(id.substr(0,1)=='.'){-->
+            <!--return document.getElementsByClassName(id.substr(1))-->
+        <!--}-->
+        <!--return document.getElementById(id);-->
+    <!--}-->
+    <!--function position() {-->
+        <!--var container = g('.container');-->
+        <!--container[0].style.left = (window.innerWidth/2-200) + 'px';-->
+        <!--container[0].style.top = (window.innerHeight/2-100) + 'px';-->
+    <!--}-->
+<!--</script>-->
+</body>
+</html>

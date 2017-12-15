@@ -9,6 +9,7 @@
 .clearfix{
     *zoom: 1;
 }
+
 /*主容器*/
 .container{
     width: 980px;
@@ -17,6 +18,8 @@
     box-shadow: 2px 2px 2px gray;
 
     position: relative;
+    left: 50%;
+    margin-left: -490px;
 }
 
 /*顶部title*/
@@ -266,6 +269,17 @@ section p{
 .right_article .ra ul li{
     font-size: 16px;
     line-height: 40px;
+    list-style: none;
+}
+li span{
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:10px solid rosybrown;
+    height:0;
+    width:0;
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
 }
 .right_article .title_left{
     width: 260px;
@@ -275,6 +289,65 @@ section p{
     left: 0;
     bottom: 0;
 }
-.right_article .content_right{
+.right_article .title_left .tf1{
+    height: 86px;
+    width: 70px;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: 110px;
+    color: #ffffff;
+    line-height: 82px;
+    border-right: 2px solid #ffffff;
+    float: left;
+}
+.right_article .title_left .tf2{
+    width: 180px;
+    font-size: 21px;
+    color: #ffffff;
+    float: right;
+    margin-top: 40px;
 
+}
+.right_article .title_left .tf3{
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 80px;
+}
+.right_article .content_right{
+    float: right;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    line-height: 20px;
+}
+.right_article .content_right .quote {
+    width: 40px;
+    font-size: 72px;
+    color: #d45d5c;
+    font-family: "Arial Black";
+    line-height: 20px;
+}
+.right_article .content_right #q1{
+    float: left;
+
+}
+.right_article .content_right #q2{
+    float: right;
+    line-height: 60px;
+}
+/*footer*/
+footer{
+    width: 892px;
+    height: 60px;
+    border-top: 1px solid #938E8C;
+    position: absolute;
+    left: 50%;
+    margin-left: -446px;
+    bottom: 0;
+
+    color: #d45d5c;
+    font-size: 12px;
+    text-align: right;
 }

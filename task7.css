@@ -1,0 +1,39 @@
+.clearfix:before,
+.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zomm: 1;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*导航栏*/
+nav{
+    height: 60px;
+    position: relative;
+
+}
+nav a{
+    width: 60px;
+    color: #676767;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+nav img{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+nav ul li{
+    float: right;
+}

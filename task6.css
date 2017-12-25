@@ -18,8 +18,10 @@
     box-shadow: 2px 2px 2px gray;
 
     position: relative;
-    left: 50%;
-    margin-left: -490px;
+    /*left: 50%;*/
+    /*margin-left: -490px;*/
+    margin: 0 auto;
+
 }
 
 /*顶部title*/
